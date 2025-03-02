@@ -60,14 +60,16 @@ export default function Landing() {
           Full-Stack JavaScript Developer | Building Web Applications
         </motion.p>
         <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-2 sm:gap-1 md:gap-3 lg:gap-5">
-          <motion.div
-            className="mt-3 px-4 py-2 bg-blue-500 text-white rounded-lg text-sm font-semibold cursor-pointer hover:bg-blue-600 transition"
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.6, duration: 0.5 }}
-          >
-            <Link href="/my/skills">Explore Skills</Link>
-          </motion.div>
+          <Link href="/my/skills">
+            <motion.div
+              className="mt-3 px-4 py-2 bg-blue-500 text-white rounded-lg text-sm font-semibold cursor-pointer hover:bg-blue-600 transition"
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.6, duration: 0.5 }}
+            >
+              Explore Skills
+            </motion.div>
+          </Link>
           <motion.div
             className="mt-3 transition"
             initial={{ opacity: 0, scale: 0.9 }}
